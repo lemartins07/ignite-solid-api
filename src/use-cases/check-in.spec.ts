@@ -53,7 +53,7 @@ describe('Check-in Use Case', () => {
       userLongitude: -49.6401091,
     })
 
-    expect(() =>
+    await expect(() =>
       sut.execute({
         gymId: 'gym-01',
         userId: 'user-01',
@@ -95,7 +95,7 @@ describe('Check-in Use Case', () => {
       longitude: new Decimal(-49.4889672),
     })
 
-    expect(() =>
+    await expect(() =>
       sut.execute({
         gymId: 'gym-02',
         userId: 'user-01',
