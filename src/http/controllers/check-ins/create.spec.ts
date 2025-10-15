@@ -24,8 +24,6 @@ describe('Create Check-in (e2e)', () => {
       },
     })
 
-    console.log(gym)
-
     const response = await request(app.server)
       .post(`/gyms/${gym.id}/check-ins`)
       .set('Authorization', `Bearer ${token}`)
